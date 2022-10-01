@@ -7,11 +7,6 @@
 }
 
 .card {
-  display: flex;
-  height: 380px;
-  width: 700px;
-  background-color: #17141d;
-  border-radius: 10px;
   box-shadow: -1rem 0 3rem #000;
   /*   margin-left: -50px; */
   transition: 0.4s ease-out;
@@ -37,10 +32,10 @@
 
 .title {
   /* color: white;
-    font-weight: 300;
-    position: absolute;
-    left: 20px;
-    top: 15px; */
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px; */
   position: absolute;
   top: 150px;
   left: calc(30% - 50px);
@@ -84,8 +79,8 @@
 
 .circle {
   /* position: absolute;
-    top: 150px;
-    left: calc(50% - 60px); */
+  top: 150px;
+  left: calc(50% - 60px); */
 
   color: white;
   font-weight: 300;

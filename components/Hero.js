@@ -52,7 +52,7 @@ const Hero = () => {
         <button className="text-[#8CE605] border-2 border-[#8CE605] rounded-[8px] sm:px-10 md:px-12  sm:py-5 sm:mb-5  md:py-5  uppercase font-oswald hover:bg-[#8CE605] hover:text-black transition-all  hover:scale-110 hover:ease-in-out duration-1000">
           Smart Contract Auditing
         </button>
-        <button className="text-[#8CE605] border-2 border-[#8CE605] rounded-[8px] sm:px-10  md:px-12  sm:py-5 sm:mb-5 md:py-5   uppercase font-oswald hover:bg-[#8CE605] hover:text-black transition-all  hover:scale-110 hover:ease-in-out duration-1000">
+        <button className="text-[#8CE605] border-2 border-[#ffff3f] rounded-[8px] sm:px-10  md:px-12  sm:py-5 sm:mb-5 md:py-5   uppercase font-oswald transition-all  hover:scale-110 hover:ease-in-out duration-1000">
           Web/Mobile Apps Auditing
         </button>
       </div>

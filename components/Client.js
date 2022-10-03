@@ -2,12 +2,26 @@ import { useState } from "react";
 
 const Client = () => {
   const [isHover1, setIsHover1] = useState(false);
+  const [isHover2, setIsHover2] = useState(false);
+  const [isHover3, setIsHover3] = useState(false);
 
   const changeColor1 = () => {
     setIsHover1(true);
   };
   const changeColorToWhite1 = () => {
     setIsHover1(false);
+  };
+  const changeColor2 = () => {
+    setIsHover2(true);
+  };
+  const changeColorToWhite2 = () => {
+    setIsHover2(false);
+  };
+  const changeColor3 = () => {
+    setIsHover3(true);
+  };
+  const changeColorToWhite3 = () => {
+    setIsHover3(false);
   };
 
   return (
@@ -55,8 +69,8 @@ const Client = () => {
         </div>
         {/* 2nd Card */}
         <div
-          onMouseEnter={changeColor1}
-          onMouseLeave={changeColorToWhite1}
+          onMouseEnter={changeColor2}
+          onMouseLeave={changeColorToWhite2}
           className=" snap-center sm:mr-5 md:w-[300px] lg:w-[450px] sm:w-[600px]  md:h-[420px]  lg:h-[600px] border border-black rounded-md bg-black/40 hover:bg-[#8CE605]/60 transition-colors duration-1000 flex flex-col justify-center items-center md:px-12 sm:py-8"
         >
           <div className=" w-[50px] h-[50px] border border-[#ffffff] rounded-full mb-2 ">
@@ -68,14 +82,14 @@ const Client = () => {
           <div className="sm:px-20">
             <div
               className={`text-[#8CE605]  font-Noto font-bold text-sm text-center ${
-                isHover1 ? "text-white" : "text-[#8CE605]"
+                isHover2 ? "text-white" : "text-[#8CE605]"
               }`}
             >
               AMANDA LEE
             </div>
             <div
               className={`font-Noto font-bold text-xl text-center ${
-                isHover1 ? "text-white" : "text-[#8CE605]"
+                isHover2 ? "text-white" : "text-[#8CE605]"
               }`}
             >
               CEO <span className="italic">@PeckShield</span>
@@ -89,8 +103,8 @@ const Client = () => {
         </div>
         {/* 2nd Card */}
         <div
-          onMouseEnter={changeColor1}
-          onMouseLeave={changeColorToWhite1}
+          onMouseEnter={changeColor3}
+          onMouseLeave={changeColorToWhite3}
           className=" sm:mr-5 md:w-[300px] sm:w-[600px] lg:w-[350px] md:h-[420px] lg:h-[500px] border border-black rounded-md bg-black/40 hover:bg-[#8CE605]/60 transition-all duration-1000 flex flex-col justify-center items-center md:p-12  sm:py-8 "
         >
           <div className="w-[50px] h-[50px] border border-[#ffffff] rounded-full mb-2">
@@ -102,14 +116,14 @@ const Client = () => {
           <div className="sm:px-20">
             <div
               className={`text-[#8CE605]  font-Noto font-bold text-sm text-center ${
-                isHover1 ? "text-white" : "text-[#8CE605]"
+                isHover3 ? "text-white" : "text-[#8CE605]"
               }`}
             >
               AMANDA LEE
             </div>
             <div
               className={`font-Noto font-bold text-xl text-center ${
-                isHover1 ? "text-white" : "text-[#8CE605]"
+                isHover3 ? "text-white" : "text-[#8CE605]"
               }`}
             >
               CEO <span className="italic">@PeckShield</span>

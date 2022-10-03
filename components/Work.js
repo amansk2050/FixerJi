@@ -7,6 +7,7 @@ const Work = () => {
   const [isHover1, setIsHover1] = useState(false);
   const [isHover2, setIsHover2] = useState(false);
   const [isShow, setIsShow] = useState(false);
+  const [isShow1, setIsShow1] = useState(false);
 
   const changeColor1 = () => {
     setIsHover1(true);
@@ -23,6 +24,9 @@ const Work = () => {
 
   const showDiv = () => {
     setIsShow(!isShow);
+  };
+  const showDiv1 = () => {
+    setIsShow1(!isShow1);
   };
 
   return (
@@ -176,7 +180,7 @@ const Work = () => {
                   isHover2 ? "text-black" : "text-white"
                 }`}
               >
-                {isShow ? (
+                {isShow1 ? (
                   <span>
                     We will thoroughly audit your application for
                     vulnerabilities in code, UI/UX issues, API auditing,
@@ -210,13 +214,13 @@ const Work = () => {
                 )}
               </div>
               <div className="ml-3 text-white w-10 h-10 scale-150">
-                {isShow ? (
+                {isShow1 ? (
                   <div>
-                    <ExpandCircleDownIcon onClick={showDiv} />
+                    <ExpandCircleDownIcon onClick={showDiv1} />
                   </div>
                 ) : (
                   <div>
-                    <ArrowCircleUpIcon onClick={showDiv} />
+                    <ArrowCircleUpIcon onClick={showDiv1} />
                   </div>
                 )}
               </div>

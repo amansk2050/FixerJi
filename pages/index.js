@@ -11,7 +11,7 @@ import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <main className="bg-gradient-to-r from-[#000000] to-[#434343]">
+    <main className="bg-black">
       <section className="w-full">
         <Navbar />
       </section>

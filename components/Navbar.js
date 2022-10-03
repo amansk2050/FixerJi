@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="sm:fixed md:absolute z-50 bg-black w-full text-white flex justify-around p-4 items-center">
+    <div className="sm:fixed md:absolute z-50 bg-black/40 w-full text-white flex justify-around p-4 items-center">
       <div className="text-2xl font-bold text-center">
         <h1>
           <span>Fixerji</span>

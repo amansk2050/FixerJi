@@ -167,7 +167,7 @@ const Work = () => {
           onMouseLeave={changeColorToWhite2}
           className="border-2  bg-black/40 border-[#8CE605] sm:px-5 md:px-10 md:py-10 sm:py-5 rounded-lg mb-6 hover:bg-[#8CE605]/80 transition duration-700"
         >
-          <div className="flex md:flex-row sm:flex-col sm:justify-center md:justify-self-auto sm:items-center   md:items-center lg:w-[900px] md:w-[600px] sm:w-[300px]">
+          <div className="flex md:flex-row sm:flex-col sm:justify-center md:justify-self-auto sm:items-center   md:items-start lg:w-[900px] md:w-[600px] sm:w-[300px]">
             <div className="md:w-[500px] sm:w-[100px] sm:pb-2  md:pr-4 ">
               <img
                 src="http://fixerji.theuptraining.com/wp-content/uploads/2022/06/application-1.png"

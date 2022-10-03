@@ -3,58 +3,70 @@ import React from "react";
 const Contact = () => {
   return (
     <>
-      <div className="flex  justify-center  md:pt-[50px] sm:pt-[100px] pt-10 items-center">
-        <div className="text-[#8CE605] mb-8 font-poppins font-bold text-4xl">
-          Contact Us
+      <div className="flex justify-center md:pt-[50px] sm:pt-[120px] pt-10 items-center">
+        <div className="text-[#8CE605] mb-8 font-poppins font-bold sm:text-xl md:text-4xl uppercase">
+          Contact
         </div>
       </div>
-      <div className="flex justify-center items-center text-[#ffffff]  border-2 border-[#8CE605] mx-auto py-10 rounded-lg">
-        <div>
-          <form className="w-full">
-            <div>
-              <div>
-                <label className="mr-5" htmlFor="name">
-                  Name
-                </label>
-                <input
-                  className="bg-transparent border-b-2"
-                  type="text"
-                  id="name"
-                  placeholder="Name"
-                />
-
-                <label className="mr-5 pl-5" htmlFor="name">
-                  Email
-                </label>
-                <input
-                  className="bg-transparent border-b-2"
-                  type="text"
-                  id="name"
-                  placeholder="email"
-                />
-              </div>
-              <div className="mt-5">
-                <label className="mr-5" htmlFor="name">
-                  Phone
-                </label>
-                <input
-                  className="bg-transparent border-b-2"
-                  type="text"
-                  id="name"
-                  placeholder="How can we help you "
-                />
-              </div>
-              <div className="mt-12">
-                <input
-                  className="bg-transparent border-b-2 w-full"
-                  type="text"
-                  id="name"
-                  placeholder="How can we help you "
-                />
-              </div>
+      <div className="flex w-full justify-center items-center text-[#ffffff]  mx-auto lg:py-6 rounded-lg">
+        <form action="#">
+          <div className="flex md:flex-row sm:flex-col items-center md:justify-around ">
+            <div className="bg-black/80 md:pr-20 sm:pr-32 lg:pr-40 md:pl-4 py-4  sm:mx-6 md:mx-3 sm:my-2 rounded-lg">
+              <label htmlFor="name"></label>
+              <input
+                className="bg-transparent ml-2 outline-0"
+                id="name"
+                type="text"
+                placeholder="Name"
+              />
             </div>
-          </form>
-        </div>
+            <div className="bg-black/80 md:pr-20  sm:pr-32 lg:pr-40 md:pl-4 py-4 mx-3  rounded-lg">
+              <label htmlFor="email"></label>
+              <input
+                className="bg-transparent ml-2 outline-0"
+                id="name"
+                type="text"
+                placeholder="Email Address"
+              />
+            </div>
+          </div>
+          <div className="flex  md:flex-row  sm:flex-col items-center justify-around mt-3">
+            <div className="bg-black/80 md:pr-20  sm:pr-32 lg:pr-40 md:pl-4 py-4 mx-3 sm:my-2 rounded-lg">
+              <label htmlFor="phone"></label>
+              <input
+                className="bg-transparent ml-2 outline-0 "
+                id="name"
+                type="text"
+                placeholder="Phone Number"
+              />
+            </div>
+            <div className="bg-black/80 md:pr-20  sm:pr-32 lg:pr-40 md:pl-4 py-4 mx-3 rounded-lg">
+              <label htmlFor="subject"></label>
+              <input
+                className="bg-transparent ml-2 outline-0"
+                id="name"
+                type="text"
+                placeholder="Subject"
+              />
+            </div>
+          </div>
+          <div className="flex flex-col items-center justify-around mt-3">
+            <div className="bg-black/80 md:pr-[384px]  sm:pr-[120px] sm:pl-3 lg:pr-[545px] md:pl-[28px]   md:pb-36 md:pt-6 mx-3 sm:py-4  rounded-lg">
+              <label htmlFor="message"></label>
+              <input
+                className="bg-transparent outline-0"
+                id="name"
+                type="text"
+                placeholder="Write Message"
+              />
+            </div>
+            <div className="mt-6">
+              <button className="w-60 mb-5  text-black font-semibold bg-white/90 border border-[#8CE605] rounded-lg uppercase py-3 hover:bg-[#000000]/10 hover:text-white transition-colors duration-500">
+                SEND MESSAGE
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
     </>
   );

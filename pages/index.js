@@ -18,25 +18,25 @@ export default function Home() {
 
       <div className="mx-auto container md:px-14">
         {/* <div className="h-screen"> */}
-        <section className="w-full h-screen">
+        <section className="w-full min-h-screen">
           <Hero />
         </section>
         {/* </div> */}
-        <section className="h-screen mx-auto w-full">
+        <section className="min-h-screen mx-auto w-full">
           <Work />
         </section>
-        <section className="h-screen w-full">
+        {/* <section className="h-screen w-full">
           <Client />
-        </section>
-        <section className="h-screen w-full">
+        </section> */}
+        <section className="min-h-screen w-full">
           <About />
         </section>
-        <section className="h-screen mx-auto w-3/5">
+        <section className="min-h-screen mx-auto w-4/5">
           <Contact />
         </section>
       </div>
-      <footer>
-        <Footer className="h-[100px] w-full" />
+      <footer className="h-auto w-full">
+        <Footer />
       </footer>
     </main>
   );

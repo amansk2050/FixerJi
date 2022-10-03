@@ -11,7 +11,7 @@
 //   };
 
 //   return (
-//     <div className="fixed  bg-white/10 w-full text-white flex justify-around p-4 items-center">
+//     <div className="sm:fixed md:absolute z-50 bg-black w-full text-white flex justify-around p-4 items-center">
 //       <div className="text-2xl font-bold text-center">
 //         <h1>
 //           <span>Fixerji</span>
@@ -19,14 +19,14 @@
 //       </div>
 
 //       <nav>
-//         <div className="absolute right-6 md:hidden top-4 scale-100">
+//         <div className="sm:absolute right-6 md:hidden top-4 scale-100">
 //           <MenuIcon onClick={showMenu} className=" cursor-pointer" />
 //         </div>
 //         <ul className="hidden md:flex gap-8 p-6 uppercase">
-//           <li>
+//           <li className="border-b-2 border-black hover:border-white">
 //             <Link href="#">Home</Link>
 //           </li>
-//           <li>
+//           <li className="border-b-2 hover:border-b-[#000000]">
 //             <Link href="#">What we do</Link>
 //           </li>
 //           <li>
@@ -54,13 +54,14 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
+  const [isHover, setIsHover] = useState(true);
 
   const showMenu = () => {
     setActive(!active);
   };
 
   return (
-    <div className="fixed z-101 bg-black w-full text-white flex justify-around p-4 items-center">
+    <div className="sm:fixed md:absolute z-50 bg-black w-full text-white flex justify-around p-4 items-center">
       <div className="text-2xl font-bold text-center">
         <h1>
           <span>Fixerji</span>
@@ -68,23 +69,23 @@ const Navbar = () => {
       </div>
 
       <nav>
-        <div className="absolute right-6 md:hidden top-4 scale-100">
+        <div className="sm:absolute right-6 md:hidden top-4 scale-100">
           <MenuIcon onClick={showMenu} className=" cursor-pointer" />
         </div>
         <ul className="hidden md:flex gap-8 p-6 uppercase">
-          <li>
+          <li className="border-b-2 border-black hover:border-b-[#ffffff]">
             <Link href="#">Home</Link>
           </li>
-          <li>
+          <li className="border-b-2 border-black hover:border-b-[#ffffff]">
             <Link href="#">What we do</Link>
           </li>
-          <li>
+          <li className="border-b-2 border-black hover:border-b-[#ffffff]">
             <Link href="#">Clientele</Link>
           </li>
-          <li>
+          <li className="border-b-2 border-black hover:border-b-[#ffffff]">
             <Link href="#">About</Link>
           </li>
-          <li>
+          <li className="border-b-2 border-black hover:border-b-[#ffffff] z-50">
             <Link href="#">Contact</Link>
           </li>
         </ul>

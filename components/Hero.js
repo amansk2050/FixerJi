@@ -49,15 +49,16 @@ const Hero = () => {
         {/* <button className="absolute top-[450px] text-[#8CE605] border-2 border-[#8CE605] rounded-[38px] px-10 py-5 uppercase font-oswald hover:bg-[#8CE605] hover:text-black transition-all  hover:scale-110 hover:ease-in-out duration-1000">
           Lets Talk
         </button> */}
-        <button className="text-[#8CE605] border-2 border-[#8CE605] rounded-[8px] sm:px-10 md:px-12  sm:py-5 sm:mb-5  md:py-5  uppercase font-oswald hover:bg-[#8CE605] hover:text-black transition-all  hover:scale-110 hover:ease-in-out duration-700">
-          Smart Contract Auditing
-        </button>
         <div className="relative group">
-          <div className="absolute -inset-0.5 opacity-75 blur rounded-[8px]  sm:px-10  md:px-12  sm:py-5 sm:mb-5 md:py-5 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt "></div>
-          <button className=" relative text-[#8CE605] bg-[#2c2c2c]/80 border  rounded-[8px] sm:px-10  md:px-12  sm:py-5 sm:mb-5 md:py-5   uppercase font-oswald transition-all  hover:scale-95 hover:ease-in-out duration-700 group-hover:text-gray-100">
-            Web/Mobile Apps Auditing
+          <div className="absolute -inset-0.5 opacity-75 blur rounded-[8px]  sm:px-10  md:px-12  sm:py-5 sm:mb-5 md:py-5 bg-[#8CE605] group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt "></div>
+          <button className=" relative text-black] bg-[#8CE605]/80  rounded-[8px] sm:px-10  md:px-12  sm:py-5 sm:mb-5 md:py-5   uppercase font-oswald transition-all  hover:scale-110 hover:ease-in-out duration-700">
+            Smart Contract Auditing
           </button>
         </div>
+
+        <button className="text-[#8CE605] border-2 border-[#8CE605] rounded-[8px] sm:px-10 md:px-12  sm:py-5 sm:mb-5  md:py-5  uppercase font-oswald transition-all  hover:scale-105 hover:ease-in-out duration-700">
+          Web/Mobile Apps Auditing
+        </button>
       </div>
     </div>
   );

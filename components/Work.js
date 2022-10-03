@@ -38,7 +38,7 @@ const Work = () => {
         <div
           onMouseEnter={changeColor1}
           onMouseLeave={changeColorToWhite1}
-          className={`h-auto bg-black/40 border-2 border-[#8CE605] sm:px-5 md:px-10 md:py-10 sm:py-5 rounded-lg mb-6 hover:bg-[#8CE605]/80 transition duration-700 `}
+          className="h-auto bg-black/40 border-2 border-[#8CE605] sm:px-5 md:px-10 md:py-10 sm:py-5 rounded-lg mb-6 hover:bg-[#8CE605]/80 transition duration-700"
         >
           <div className="flex md:flex-row sm:flex-col sm:justify-center sm:items-center md:items-start lg:w-[900px] md:w-[600px] sm:w-[300px]">
             <div className="md:w-[600px] sm:w-[100px] sm:pb-2 md:pr-4 ">
@@ -154,7 +154,7 @@ const Work = () => {
                     <ExpandCircleDownIcon onClick={showDiv} />
                   </div>
                 ) : (
-                  <div>
+                  <div onClick={changeColor1}>
                     <ArrowCircleUpIcon onClick={showDiv} />
                   </div>
                 )}

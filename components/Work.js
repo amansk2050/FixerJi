@@ -79,14 +79,14 @@ const Work = () => {
 
   return (
     <div className="flex flex-col justify-center pt-10 items-center">
-      <div className="text-[#8CE605] mb-8 font-poppins font-bold sm:text-2xl md:text-4xl">
+      <div className="text-[#8CE605] mb-8 font-poppins font-bold sm:text-2xl md:text-4xl uppercase tracking-wider">
         What We Do
       </div>
       <div className="flex flex-col justify-center items-center">
         <div
           onMouseEnter={changeColor1}
           onMouseLeave={changeColorToWhite1}
-          className={`border-2 border-[#8CE605] sm:px-5 md:px-10 md:py-10 sm:py-5 rounded-lg mb-6 hover:bg-[#8CE605] transition duration-700 `}
+          className={`border-2 border-[#8CE605] sm:px-5 md:px-10 md:py-10 sm:py-5 rounded-lg mb-6 hover:bg-[#8CE605]/80 transition duration-700 `}
         >
           <div className="flex md:flex-row sm:flex-col sm:justify-center md:justify-self-auto sm:items-center lg:w-[900px] md:w-[600px] sm:w-[300px]">
             <div className="md:w-[600px] sm:w-[100px] sm:pb-2 md:pr-4 ">
@@ -115,7 +115,7 @@ const Work = () => {
         <div
           onMouseEnter={changeColor2}
           onMouseLeave={changeColorToWhite2}
-          className="border-2 border-[#8CE605] sm:px-5 md:px-10 md:py-10 sm:py-5 rounded-lg mb-6 hover:bg-[#8CE605] transition duration-700"
+          className="border-2 border-[#8CE605] sm:px-5 md:px-10 md:py-10 sm:py-5 rounded-lg mb-6 hover:bg-[#8CE605]/80 transition duration-700"
         >
           <div className="flex md:flex-row sm:flex-col sm:justify-center md:justify-self-auto sm:items-center lg:w-[900px] md:w-[600px] sm:w-[300px]">
             <div className="md:w-[500px] sm:w-[100px] sm:pb-2  md:pr-4 ">

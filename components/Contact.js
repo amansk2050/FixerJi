@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <>
       <div className="flex justify-center md:pt-[50px] sm:pt-[120px] pt-10 items-center">
-        <div className="text-[#8CE605] mb-8 font-poppins font-bold sm:text-xl md:text-4xl uppercase">
+        <div className="text-[#8CE605] mb-8 font-poppins font-bold sm:text-xl md:text-4xl uppercase  tracking-wider">
           Contact
         </div>
       </div>
@@ -14,7 +14,7 @@ const Contact = () => {
             <div className="bg-black/80 md:pr-20 sm:pr-32 lg:pr-40 md:pl-4 py-4  sm:mx-6 md:mx-3 sm:my-2 rounded-lg">
               <label htmlFor="name"></label>
               <input
-                className="bg-transparent ml-2 outline-0"
+                className="bg-transparent ml-2 outline-0 "
                 id="name"
                 type="text"
                 placeholder="Name"
@@ -61,7 +61,7 @@ const Contact = () => {
               />
             </div>
             <div className="mt-6">
-              <button className="w-60 mb-5  text-black font-semibold bg-white/90 border border-[#8CE605] rounded-lg uppercase py-3 hover:bg-[#000000]/10 hover:text-white transition-colors duration-500">
+              <button className="w-60 mb-5  text-black font-semibold bg-[#f3de2c] border border-[#8CE605] rounded-lg uppercase py-3 hover:bg-[#000000]/10 hover:text-white transition-colors duration-500">
                 SEND MESSAGE
               </button>
             </div>

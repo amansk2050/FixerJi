@@ -17,17 +17,16 @@ export default function Home() {
       </section>
 
       <div className="mx-auto container md:px-14">
-        {/* <div className="h-screen"> */}
         <section className="w-full min-h-screen">
           <Hero />
         </section>
-        {/* </div> */}
+
         <section className="min-h-screen mx-auto w-full">
           <Work />
         </section>
-        {/* <section className="h-screen w-full">
+        <section className="min-h-screen w-full">
           <Client />
-        </section> */}
+        </section>
         <section className="min-h-screen w-full">
           <About />
         </section>

@@ -144,6 +144,46 @@ const Work = () => {
                       <li className="text-md">
                         25.Block timestamp manipulation.
                       </li>
+                      <br />
+                      <h1 className="text-xl">
+                        Iteration 3 - Intention vs action
+                      </h1>
+                      <li className="text-md">
+                        In this iteration, we read your contracts line by line
+                        and understand each what the contract does, how it does
+                        so that we know the meaning of each and every
+                        instruction, statement, variable and function. After
+                        going through the contract we study the purpose of the
+                        project and check whether both of these are aligned or
+                        not. If we find an architectural level issue or a
+                        suggestion which can make your codebase better, we will
+                        include that suggestion as well in the report.
+                      </li>
+                      <br />
+                      <h1 className="text-xl">
+                        Iteration 4 - Localnet deployment and testing with
+                        automated test scripts
+                      </h1>
+                      <li className="text-md">
+                        Although we understand that the code will do what is
+                        written but still it might perform differently after
+                        deployment, hence we write test scripts to test every
+                        branch and statement.
+                      </li>
+                      <br />
+                      <h1 className="text-xl">
+                        Iteration 5 - Public network deployment and user testing
+                      </h1>
+                      <li className="text-md">
+                        The last and the final step is to deploy the contracts
+                        on the public network (mainnet or testnet) and test each
+                        and every functionality before the final sign off. At
+                        the end, we will give you a detailed report with issues
+                        and possible solutions (we do not and will not release
+                        that report publicly without your consent). You may fix
+                        them and release the code or have another round of
+                        auditing with us.
+                      </li>
                     </div>
                   </div>
                 )}

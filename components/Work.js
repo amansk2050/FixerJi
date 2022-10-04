@@ -6,14 +6,14 @@ import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
 const Work = () => {
   const [isHover1, setIsHover1] = useState(false);
   const [isHover2, setIsHover2] = useState(false);
-  const [isShow, setIsShow] = useState(false);
-  const [isShow1, setIsShow1] = useState(false);
+  const [isShow, setIsShow] = useState(true);
+  const [isShow1, setIsShow1] = useState(true);
 
   const changeColor1 = () => {
     setIsHover1(true);
   };
   const changeColorToWhite1 = () => {
-    setIsHover1(false);
+    setIsHover1(!isHover1);
   };
   const changeColor2 = () => {
     setIsHover2(true);
@@ -38,7 +38,7 @@ const Work = () => {
         <div
           onMouseEnter={changeColor1}
           onMouseLeave={changeColorToWhite1}
-          className="h-auto bg-black/40 border-2 border-[#8CE605] sm:px-5 md:px-10 md:py-10 sm:py-5 rounded-lg mb-6 hover:bg-[#8CE605]/80 transition duration-700"
+          className="h-auto bg-black/40 text-white border-2 border-[#8CE605] sm:px-5 md:px-10 md:py-10 sm:py-5 rounded-lg mb-6 hover:bg-[#8CE605]/80 transition duration-700"
         >
           <div className="flex md:flex-row sm:flex-col sm:justify-center sm:items-center md:items-start lg:w-[900px] md:w-[600px] sm:w-[300px]">
             <div className="md:w-[600px] sm:w-[100px] sm:pb-2 md:pr-4 ">
@@ -154,8 +154,8 @@ const Work = () => {
                     <ExpandCircleDownIcon onClick={showDiv} />
                   </div>
                 ) : (
-                  <div onClick={changeColor1}>
-                    <ArrowCircleUpIcon onClick={showDiv} />
+                  <div onClick={changeColor1} className="rotate-180">
+                    <ExpandCircleDownIcon onClick={showDiv} />
                   </div>
                 )}
               </div>
@@ -219,8 +219,8 @@ const Work = () => {
                     <ExpandCircleDownIcon onClick={showDiv1} />
                   </div>
                 ) : (
-                  <div>
-                    <ArrowCircleUpIcon onClick={showDiv1} />
+                  <div onClick={changeColor2} className="rotate-180">
+                    <ExpandCircleDownIcon onClick={showDiv1} />
                   </div>
                 )}
               </div>

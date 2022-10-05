@@ -1,14 +1,20 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <>
-      <div className="flex justify-center md:pt-[50px] sm:pt-[100px] pt-10 items-center">
+    <div id="about">
+      <div className="flex justify-center md:pt-[150px] sm:pt-[100px] pt-10 items-center">
         <div className="text-[#8CE605] mb-8 font-poppins font-bold text-4xl uppercase  tracking-wider">
           About
         </div>
       </div>
-      <div className="flex sm:flex-col md:flex-row justify-evenly md:pt-[50px] sm:pt-5 items-center md:px-6 lg:px-24">
+      <motion.div
+        initial={{ y: -200, opacity: 0 }}
+        transition={{ duration: 0.5 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        className="flex sm:flex-col md:flex-row justify-evenly md:pt-[50px] sm:pt-5 items-center md:px-6 lg:px-24"
+      >
         <div className="md:w-96 border-2 border-[#8CE605] sm:px-4 md:px-10 py-10 sm:mb-4 rounded-lg">
           <div className="flex flex-col justify-center items-center">
             <div className="w-[50px] h-[50px] border border-[#ffffff] rounded-full mb-6">
@@ -51,8 +57,8 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
-    </>
+      </motion.div>
+    </div>
   );
 };
 

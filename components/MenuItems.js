@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+import { Link } from "react-scroll";
 import CloseIcon from "@mui/icons-material/Close";
 
 const MenuItems = ({ showMenu, active }) => {
@@ -14,19 +14,64 @@ const MenuItems = ({ showMenu, active }) => {
       <div className="translate-x-0 flex flex-col items-end fixed right-[-15px] top-[-2px] justify-start pt-8 pb-24 pl-28 pr-10 md:hidden gap-4 font-semibold  z-30  bg-[#8CE605]  transition-all duration-200 ">
         <CloseIcon onClick={showMenu} className="cursor-pointer" />
         <li>
-          <Link href="#">Home</Link>
+          <Link
+            activeClass="active"
+            to="hero"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            Home
+          </Link>
         </li>
         <li>
-          <Link href="#">What we do</Link>
+          <Link
+            activeClass="active"
+            to="work"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            What we do
+          </Link>
         </li>
         <li>
-          <Link href="#">Clientele</Link>
+          <Link
+            activeClass="active"
+            to="client"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            Clientele
+          </Link>
         </li>
         <li>
-          <Link href="#">About</Link>
+          <Link
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            About
+          </Link>
         </li>
         <li>
-          <Link href="#">Contact</Link>
+          <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            Contact
+          </Link>
         </li>
       </div>
     </ul>

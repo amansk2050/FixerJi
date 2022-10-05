@@ -15,10 +15,12 @@
     "@mui/material": "^5.10.7",
     "@splidejs/react-splide": "^0.7.12",
     "@tailwindcss/forms": "^0.5.3",
+    "framer-motion": "^7.5.2",
     "next": "12.3.1",
     "npm": "^8.19.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-scroll": "^1.8.7",
     "react-simple-typewriter": "^4.0.2",
     "react-tsparticles": "^2.3.3",
     "tsparticles": "^2.3.4"

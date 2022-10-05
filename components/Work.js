@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import ExpandCircleDownIcon from "@mui/icons-material/ExpandCircleDown";
-import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
+import { motion } from "framer-motion";
 
 const Work = () => {
   const [isHover1, setIsHover1] = useState(false);
@@ -30,12 +30,19 @@ const Work = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center pt-10 items-center">
+    <div
+      className="flex flex-col justify-center md:pt-[150px] sm:pt-[120px] items-center"
+      id="work"
+    >
       <div className="text-[#8CE605] mb-8 font-poppins font-bold sm:text-2xl md:text-4xl uppercase tracking-wider">
         What We Do
       </div>
       <div className="flex flex-col justify-center items-center">
-        <div
+        <motion.div
+          initial={{ x: -200, opacity: 0 }}
+          transition={{ duration: 0.5 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
           onMouseEnter={changeColor1}
           onMouseLeave={changeColorToWhite1}
           className="h-auto bg-black/40 text-white border-2 border-[#8CE605] sm:px-5 md:px-10 md:py-10 sm:py-5 rounded-lg mb-6 hover:bg-[#8CE605]/80 transition duration-700"
@@ -203,8 +210,12 @@ const Work = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+          initial={{ x: 50, opacity: 0 }}
+          transition={{ duration: 0.75, delay: 0.55 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
           onMouseEnter={changeColor2}
           onMouseLeave={changeColorToWhite2}
           className="border-2  bg-black/40 border-[#8CE605] sm:px-5 md:px-10 md:py-10 sm:py-5 rounded-lg mb-6 hover:bg-[#8CE605]/80 transition duration-700"
@@ -270,7 +281,7 @@ const Work = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

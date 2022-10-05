@@ -15,16 +15,16 @@ export default function Home() {
     <>
       <ParticlesBackground />
       <main>
-        <section className="w-full">
+        <section className="w-full h-auto">
           <Navbar />
         </section>
 
         <div className="mx-auto container md:px-14">
-          <section className="w-full min-h-screen">
+          <section className="min-h-screen w-full">
             <Hero />
           </section>
-
-          <section className="min-h-screen mx-auto w-full">
+          <section className="h-14 w-full"></section>
+          <section className="min-h-screen  w-full">
             <Work />
           </section>
           <section className="min-h-screen w-full">

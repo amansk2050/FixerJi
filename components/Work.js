@@ -42,9 +42,11 @@ const Work = () => {
         >
           <div className="flex md:flex-row sm:flex-col sm:justify-center sm:items-center md:items-start lg:w-[900px] md:w-[600px] sm:w-[300px]">
             <div className="md:w-[600px] sm:w-[100px] sm:pb-2 md:pr-4 ">
-              <img
-                src="http://fixerji.theuptraining.com/wp-content/uploads/2022/06/smart-contracts-1.png"
-                alt="hello"
+              <Image
+                alt="Next.js logo"
+                src="/static/asset1.png"
+                width={600}
+                height={600}
               />
             </div>
             <div className="flex justify-center items-center ">
@@ -209,9 +211,11 @@ const Work = () => {
         >
           <div className="flex md:flex-row sm:flex-col sm:justify-center md:justify-self-auto sm:items-center   md:items-start lg:w-[900px] md:w-[600px] sm:w-[300px]">
             <div className="md:w-[500px] sm:w-[100px] sm:pb-2  md:pr-4 ">
-              <img
-                src="http://fixerji.theuptraining.com/wp-content/uploads/2022/06/application-1.png"
-                alt="hello"
+              <Image
+                alt="Next.js logo"
+                src="/static/asset2.png"
+                width={600}
+                height={600}
               />
             </div>
             <div className="flex justify-center items-center ">

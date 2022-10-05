@@ -14,10 +14,13 @@ const Navbar = () => {
 
   return (
     <div className="sm:fixed md:absolute z-50 bg-black/40 w-full text-white flex justify-around p-4 items-center">
-      <div className="text-2xl font-bold text-center">
-        <h1>
-          <span>Fixerji</span>
-        </h1>
+      <div className="text-2xl font-bold text-center ">
+        <Image
+          alt="Next.js logo"
+          src="/static/fixerji.jpg"
+          width={80}
+          height={50}
+        />
       </div>
 
       <nav>

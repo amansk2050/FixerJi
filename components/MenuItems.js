@@ -7,7 +7,7 @@ const MenuItems = ({ showMenu, active }) => {
     <ul
       className={
         active
-          ? " text-black flex flex-col items-end fixed  right-0 top-[-10px] backdrop-blur-sm bg-[#ffffff]/20 justify-start p-8 md:hidden gap-4 z-10 h-screen w-full transition-all duration-1000 "
+          ? " text-black flex flex-col items-end fixed  right-0 top-[-10px] backdrop-blur-sm bg-[#ffffff]/20 justify-start p-8 md:hidden gap-4 z-10 h-screen w-full transition-all duration-1000"
           : " flex flex-col opacity-0 translate-x-96 transition-all duration-700 absolute top-[10px] h-80 w-56 p-8 items-end gap-4 z-10  "
       }
     >

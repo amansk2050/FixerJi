@@ -40,10 +40,10 @@ module.exports = {
             transform: "rotate(0deg)",
           },
           "25%": {
-            transform: "rotate(1.5deg)",
+            transform: "rotate(0deg)",
           },
           "75%": {
-            transform: "rotate(-1.5.deg)",
+            transform: "rotate(0 eg)",
           },
         },
       },

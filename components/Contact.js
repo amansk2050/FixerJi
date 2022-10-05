@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div id="contact">
       <div className="flex justify-center md:pt-[150px] sm:pt-[120px]  items-center">
-        <div className="text-[#8CE605] mb-8 font-poppins font-bold sm:text-xl md:text-4xl uppercase  tracking-wider">
+        <div className="text-[#8CE605] mb-8 font-poppins font-bold md:text-4xl uppercase  tracking-wider">
           Contact
         </div>
       </div>

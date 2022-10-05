@@ -10,7 +10,7 @@ const About = () => {
         </div>
       </div>
       <motion.div
-        initial={{ y: -200, opacity: 0 }}
+        initial={{ y: 200, opacity: 0 }}
         transition={{ duration: 0.5 }}
         whileInView={{ opacity: 1, y: 0 }}
         className="flex sm:flex-col md:flex-row justify-evenly md:pt-[50px] sm:pt-5 items-center md:px-6 lg:px-24"

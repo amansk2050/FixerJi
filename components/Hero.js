@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <div className="h-full" id="hero">
       <div className="relative flex justify-center items-center h-20">
-        <h1 className="absolute sm:top-[150px]  md:top-[200px] font-bold uppercase font-oswald sm:text-lg md:text-5xl lg:text-6xl text-[#8CE605] tracking-widest z-0">
+        <h1 className="absolute sm:top-[150px] text-center md:top-[200px] font-bold uppercase font-oswald sm:text-3xl md:text-5xl lg:text-6xl text-[#8CE605] tracking-widest z-0">
           <span className="motion-safe:animate-pulse">{text}</span>
           <Cursor />
         </h1>

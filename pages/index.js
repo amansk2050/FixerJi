@@ -19,7 +19,7 @@ export default function Home() {
           <Navbar />
         </section>
 
-        <div className="mx-auto container md:px-14">
+        <div className="mx-auto container flex  flex-col justify-center items-center md:px-14">
           <section className="min-h-screen w-full">
             <Hero />
           </section>

@@ -31,7 +31,7 @@ const Hero = () => {
         </button> */}
         <div className="relative group">
           <div className="absolute -inset-0.5 opacity-75 blur rounded-[8px]  sm:px-10  md:px-12  sm:py-5 sm:mb-5 md:py-5 bg-[#8CE605] group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt "></div>
-          <button className=" relative text-black] bg-[#8CE605]/80  rounded-[8px] sm:px-10  md:px-12  sm:py-5 sm:mb-5 md:py-5   uppercase font-oswald transition-all  hover:scale-110 hover:ease-in-out duration-700">
+          <button className="relative text-black border-2 border-[#8CE605] bg-[#8CE605]  rounded-[8px] sm:px-10  md:px-12  sm:py-5 sm:mb-5 md:py-5   uppercase font-oswald transition-all  hover:scale-110 hover:ease-in-out duration-700">
             Smart Contract Auditing
           </button>
         </div>

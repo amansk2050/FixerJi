@@ -54,7 +54,7 @@ const Client = () => {
         <div
           onMouseEnter={changeColor1}
           onMouseLeave={changeColorToWhite1}
-          className=" sm:mr-5 md:w-[300px] sm:w-[600px] lg:w-[350px] md:h-[420px] lg:h-[500px] border border-black rounded-md bg-neutral-900 hover:bg-[#8CE605]/80 transition-all duration-1000 flex flex-col justify-center items-center md:p-12  sm:py-8 "
+          className=" sm:mr-3 md:w-[300px] sm:w-[600px] lg:w-[350px] md:h-[420px] lg:h-[500px] border border-black rounded-md bg-neutral-900 hover:bg-[#8CE605]/80 transition-all duration-1000 flex flex-col justify-center items-center md:p-12  sm:py-8 "
         >
           <div className="w-[50px] h-[50px] border border-[#ffffff] rounded-full mb-2">
             <img
@@ -88,7 +88,7 @@ const Client = () => {
         <div
           onMouseEnter={changeColor2}
           onMouseLeave={changeColorToWhite2}
-          className=" sm:mr-5 md:w-[300px] sm:w-[600px] lg:w-[350px] md:h-[420px] lg:h-[500px] border border-black rounded-md  bg-neutral-900 hover:bg-[#8CE605]/80 transition-all duration-1000 flex flex-col justify-center items-center md:p-12  sm:py-8 "
+          className=" sm:mr-3 md:w-[300px] sm:w-[600px] lg:w-[350px] md:h-[420px] lg:h-[500px] border border-black rounded-md  bg-neutral-900 hover:bg-[#8CE605]/80 transition-all duration-1000 flex flex-col justify-center items-center md:p-12  sm:py-8 "
         >
           <div className="w-[50px] h-[50px] border border-[#ffffff] rounded-full mb-2">
             <img

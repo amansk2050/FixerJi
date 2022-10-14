@@ -9,7 +9,7 @@ const Contact = () => {
           Contact
         </div>
       </div>
-      <div className="flex w-full justify-center items-center text-[#ffffff]  mx-auto lg:py-6 rounded-lg">
+      <div className="flex w-5/6  justify-center items-center text-[#ffffff]  mx-auto lg:py-6 rounded-lg">
         <form autocomplete="off" action="#">
           <div className="flex md:flex-row sm:flex-col items-center md:justify-between ">
             <div className="flex items-center ">

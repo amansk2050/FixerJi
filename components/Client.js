@@ -25,6 +25,22 @@ const Client = () => {
     setIsHover3(false);
   };
 
+  // useEffect(() => {}, []);
+  // let boxVariants = {};
+  // // const isMobile = window.innerWidth < 768;
+
+  // if (typeof window !== "undefined" && window.innerWidth < 768) {
+  //   boxVariants = {
+  //     transition: {
+  //       duration: 0.75,
+  //     },
+  //     opacity: {
+  //       initial: 0,
+  //       whileInView: 1,
+  //     },
+  //   };
+  // }
+
   return (
     <div id="client">
       <div className="flex justify-center md:pt-[150px] sm:pt-[120px] pt-10 items-center">
@@ -35,11 +51,7 @@ const Client = () => {
 
       {/* rest */}
       <div className="flex sm:w-auto md:w-full sm:overflow-x-auto md:overflow-hidden  md:justify-around items-center">
-        <motion.div
-          initial={{ opacity: 0 }}
-          transition={{ duration: 0.75 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
+        <div
           onMouseEnter={changeColor1}
           onMouseLeave={changeColorToWhite1}
           className=" sm:mr-5 md:w-[300px] sm:w-[600px] lg:w-[350px] md:h-[420px] lg:h-[500px] border border-black rounded-md bg-neutral-900 hover:bg-[#8CE605]/80 transition-all duration-1000 flex flex-col justify-center items-center md:p-12  sm:py-8 "
@@ -71,7 +83,7 @@ const Client = () => {
             the readable content of a page when looking at its layout. The point
             of using Lorem Ipsum is that it has a more-or-less normal
           </div>
-        </motion.div>
+        </div>
         {/* 2nd Card */}
         <div
           onMouseEnter={changeColor2}
@@ -107,11 +119,7 @@ const Client = () => {
           </div>
         </div>
         {/* 2nd Card */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          transition={{ duration: 0.75 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
+        <div
           onMouseEnter={changeColor3}
           onMouseLeave={changeColorToWhite3}
           className=" sm:mr-5 md:w-[300px] sm:w-[600px] lg:w-[350px] md:h-[420px] lg:h-[500px] border border-black rounded-md  bg-neutral-900 hover:bg-[#8CE605]/80 transition-all duration-1000 flex flex-col justify-center items-center md:p-12  sm:py-8 "
@@ -143,7 +151,7 @@ const Client = () => {
             the readable content of a page when looking at its layout. The point
             of using Lorem Ipsum is that it has a more-or-less normal
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

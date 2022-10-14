@@ -40,14 +40,14 @@ const Work = () => {
       <div className="flex flex-col justify-center items-center">
         <motion.div
           onClick={showDiv}
-          initial={{ x: -200, opacity: 0 }}
+          initial={{ y: 200, opacity: 0 }}
           transition={{ duration: 0.5 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           onMouseEnter={changeColor1}
           onMouseLeave={changeColorToWhite1}
           className="h-auto bg-black/40 text-white border-2 border-[#8CE605] sm:px-5 md:px-10 md:py-10 sm:py-5 rounded-lg mb-6 hover:bg-[#8CE605]/80 transition duration-700"
-         >
+        >
           <div className="flex md:flex-row sm:flex-col sm:justify-center sm:items-center md:items-start lg:w-[900px] md:w-[600px] sm:w-[300px]">
             <div className="md:w-[600px] sm:w-[100px] sm:pb-2 md:pr-4 ">
               <Image
@@ -217,9 +217,9 @@ const Work = () => {
         </motion.div>
         <motion.div
           onClick={showDiv1}
-          initial={{ x: 50, opacity: 0 }}
+          initial={{ y: 200, opacity: 0 }}
           transition={{ duration: 0.75, delay: 0.55 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           onMouseEnter={changeColor2}
           onMouseLeave={changeColorToWhite2}

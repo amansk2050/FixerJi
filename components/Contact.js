@@ -142,14 +142,17 @@ const Contact = () => {
                   />
                 </svg>
               </div>
-              <div className="bg-neutral-900 rounded-lg ">
-                <label htmlFor="message"></label>
-                <textarea
-                  id="message"
-                  rows="4"
-                  className="text-white outline-0 block p-4 text-sm  bg-neutral-900 sm:w-[280px] md:w-[800px] sm:h-[150px] md:h-[220px] rounded-lg"
-                  placeholder="Your Message..."
-                ></textarea>
+              <div className="flex justify-center items-center">
+                <div className="bg-neutral-900 rounded-lg ">
+                  <label htmlFor="message"></label>
+                  <textarea
+                    id="message"
+                    rows="4"
+                    className="text-white outline-0 block p-4 text-sm  bg-neutral-900 sm:w-[300px]  md:w-[800px] sm:h-[150px] md:h-[220px] rounded-lg"
+                    // className="text-white outline-0 block p-4 text-sm  bg-neutral-900 sm:w-[280px] md:w-[800px] sm:h-[150px] md:h-[220px] rounded-lg"
+                    placeholder="Your Message..."
+                  ></textarea>
+                </div>
               </div>
             </div>
             <div className="mt-6">

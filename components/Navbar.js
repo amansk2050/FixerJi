@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <div className="sm:fixed h-16 z-50 bg-black w-full text-white flex justify-around p-4 items-center">
-      <div className="flex justify-center text-[#008037]  tracking-wider items-center uppercase text-3xl font-bold text-center md:relative sm:absolute sm:top-0.5 sm:left-2">
+      <div className="flex justify-center text-[#008037]  tracking-wider items-center uppercase text-2xl font-bold text-center md:relative sm:absolute sm:top-0.5 sm:left-2">
         <div>
           <Image
             alt="Next.js logo"
@@ -28,7 +28,7 @@ const Navbar = () => {
       </div>
 
       <nav>
-        <div className="sm:absolute right-5 md:hidden top-5 scale-100">
+        <div className="sm:absolute right-8 md:hidden top-5 scale-100">
           <MenuIcon onClick={showMenu} className=" cursor-pointer" />
         </div>
         <ul className="hidden md:flex gap-8 p-6 uppercase">

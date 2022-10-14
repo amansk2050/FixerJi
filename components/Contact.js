@@ -152,8 +152,8 @@ const Contact = () => {
                   <textarea
                     id="message"
                     rows="4"
-                    // className="text-white outline-0 block p-4 text-sm  bg-neutral-900 sm:w-[306px]  md:w-[800px] sm:h-[150px] md:h-[220px] rounded-lg"
-                    className="text-white outline-0 block p-4 text-sm  bg-neutral-900 sm:w-[270px] md:w-[800px] sm:h-[150px] md:h-[220px] rounded-lg"
+                    className="text-white outline-0 block p-4 text-sm  bg-neutral-900 sm:w-[306px]  md:w-[800px] sm:h-[150px] md:h-[220px] rounded-lg"
+                    // className="text-white outline-0 block p-4 text-sm  bg-neutral-900 sm:w-[270px] md:w-[800px] sm:h-[150px] md:h-[220px] rounded-lg"
                     placeholder="Your Message..."
                   ></textarea>
                 </div>

@@ -76,9 +76,9 @@ const Client = () => {
         <div
           onMouseEnter={changeColor2}
           onMouseLeave={changeColorToWhite2}
-          className=" snap-center sm:mr-5 md:w-[300px] lg:w-[450px] sm:w-[600px]  md:h-[420px]  lg:h-[600px] border border-black rounded-md bg-neutral-900 hover:bg-[#8CE605]/80 transition-colors duration-1000 flex flex-col justify-center items-center md:px-12 sm:py-8"
+          className=" sm:mr-5 md:w-[300px] sm:w-[600px] lg:w-[350px] md:h-[420px] lg:h-[500px] border border-black rounded-md  bg-neutral-900 hover:bg-[#8CE605]/80 transition-all duration-1000 flex flex-col justify-center items-center md:p-12  sm:py-8 "
         >
-          <div className=" w-[50px] h-[50px] border border-[#ffffff] rounded-full mb-2 ">
+          <div className="w-[50px] h-[50px] border border-[#ffffff] rounded-full mb-2">
             <img
               src="https://avatars.dicebear.com/api/adventurer/your-custom-seed.svg"
               alt="name"
@@ -87,20 +87,20 @@ const Client = () => {
           <div className="sm:px-20">
             <div
               className={`text-[#8CE605]  font-Noto font-bold text-sm text-center ${
-                isHover2 ? "text-white" : "text-[#8CE605]"
+                isHover3 ? "text-white" : "text-[#8CE605]"
               }`}
             >
               AMANDA LEE
             </div>
             <div
               className={`font-Noto font-bold text-xl text-center ${
-                isHover2 ? "text-white" : "text-[#8CE605]"
+                isHover3 ? "text-white" : "text-[#8CE605]"
               }`}
             >
               CEO <span className="italic">@PeckShield</span>
             </div>
           </div>
-          <div className="text-[#ffffff] md:mb-8 font-poppins font-bold text-sm md:text-center mt-8 px-6">
+          <div className="text-[#ffffff] md:mb-8 font-poppins font-bold text-sm md:text-center mt-8 px-6 lg:w-[280px]">
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout. The point
             of using Lorem Ipsum is that it has a more-or-less normal

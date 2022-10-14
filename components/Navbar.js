@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="sm:fixed md:absolute h-16 z-50 bg-black w-full text-white flex justify-around p-4 items-center">
+    <div className="sm:fixed h-16 z-50 bg-black w-full text-white flex justify-around p-4 items-center">
       <div className="text-2xl font-bold text-center md:relative sm:absolute sm:top-0.5 sm:left-2">
         <Image
           alt="Next.js logo"

@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
+
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Work from "../components/Work";
@@ -14,8 +14,8 @@ export default function Home() {
   return (
     <>
       <ParticlesBackground />
-      <main>
-        <section className="w-full h-auto">
+      <main className="w-full">
+        <section className="md:w-full h-auto">
           <Navbar />
         </section>
 

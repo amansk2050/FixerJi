@@ -13,7 +13,7 @@ const Work = () => {
     setIsHover1(true);
   };
   const changeColorToWhite1 = () => {
-    setIsHover1(!isHover1);
+    setIsHover1(false);
   };
   const changeColor2 = () => {
     setIsHover2(true);
@@ -39,6 +39,7 @@ const Work = () => {
       </div>
       <div className="flex flex-col justify-center items-center">
         <motion.div
+          onClick={showDiv}
           initial={{ x: -200, opacity: 0 }}
           transition={{ duration: 0.5 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -46,7 +47,7 @@ const Work = () => {
           onMouseEnter={changeColor1}
           onMouseLeave={changeColorToWhite1}
           className="h-auto bg-black/40 text-white border-2 border-[#8CE605] sm:px-5 md:px-10 md:py-10 sm:py-5 rounded-lg mb-6 hover:bg-[#8CE605]/80 transition duration-700"
-        >
+         >
           <div className="flex md:flex-row sm:flex-col sm:justify-center sm:items-center md:items-start lg:w-[900px] md:w-[600px] sm:w-[300px]">
             <div className="md:w-[600px] sm:w-[100px] sm:pb-2 md:pr-4 ">
               <Image
@@ -62,17 +63,20 @@ const Work = () => {
                   isHover1 ? "text-black" : "text-white"
                 }`}
               >
+                <h1 className=" text-xl">Smart Contract Auditing</h1>
                 {isShow ? (
-                  <span>
-                    A smart contract is a computer program or a transaction
-                    protocol that is intended to automatically execute, control,
-                    or document legally relevant events and actions according to
-                    the terms of a contract or an agreement. We are a team of
-                    Blockchain developers and auditors who are building the
-                    future with web3 and also auditing it to minimise risk to
-                    funds, keep attackers away and save on gas fees with
-                    optimised code.
-                  </span>
+                  <>
+                    <span>
+                      A smart contract is a computer program or a transaction
+                      protocol that is intended to automatically execute,
+                      control, or document legally relevant events and actions
+                      according to the terms of a contract or an agreement. We
+                      are a team of Blockchain developers and auditors who are
+                      building the future with web3 and also auditing it to
+                      minimise risk to funds, keep attackers away and save on
+                      gas fees with optimised code.
+                    </span>
+                  </>
                 ) : (
                   <div>
                     A smart contract is a computer program or a transaction
@@ -197,14 +201,14 @@ const Work = () => {
                   </div>
                 )}
               </div>
-              <div className="ml-3 text-white w-10 h-10 scale-150">
+              <div className=" ml-3 text-white w-10 h-10 scale-150">
                 {isShow ? (
                   <div>
-                    <ExpandCircleDownIcon onClick={showDiv} />
+                    <ExpandCircleDownIcon />
                   </div>
                 ) : (
                   <div onClick={changeColor1} className="rotate-180">
-                    <ExpandCircleDownIcon onClick={showDiv} />
+                    <ExpandCircleDownIcon />
                   </div>
                 )}
               </div>
@@ -212,6 +216,7 @@ const Work = () => {
           </div>
         </motion.div>
         <motion.div
+          onClick={showDiv1}
           initial={{ x: 50, opacity: 0 }}
           transition={{ duration: 0.75, delay: 0.55 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -235,15 +240,18 @@ const Work = () => {
                   isHover2 ? "text-black" : "text-white"
                 }`}
               >
+                <h1 className="text-xl">Web/Mobile Apps Auditing</h1>
                 {isShow1 ? (
-                  <span>
-                    We will thoroughly audit your application for
-                    vulnerabilities in code, UI/UX issues, API auditing,
-                    Stress,and performance auditing. We have a team of
-                    experienced Users,Developers, and Auditors who can audit
-                    your whole business process not just apps to find areas of
-                    improvement so you can grow like never before.
-                  </span>
+                  <>
+                    <span>
+                      We will thoroughly audit your application for
+                      vulnerabilities in code, UI/UX issues, API auditing,
+                      Stress,and performance auditing. We have a team of
+                      experienced Users,Developers, and Auditors who can audit
+                      your whole business process not just apps to find areas of
+                      improvement so you can grow like never before.
+                    </span>
+                  </>
                 ) : (
                   <div>
                     We will thoroughly audit your application for
@@ -254,7 +262,7 @@ const Work = () => {
                     improvement so you can grow like never before.
                     <div>
                       <br />
-                      <h1 className="text-xl">Web/Mobile Apps Auditing</h1>
+
                       <li className="text-md">UI/UX auditing</li>
                       <li className="text-md">API auditing</li>
                       <li className="text-md">Stress audit</li>
@@ -268,14 +276,14 @@ const Work = () => {
                   </div>
                 )}
               </div>
-              <div className="ml-3 text-white w-10 h-10 scale-150">
+              <div className="z-40 ml-3 text-white w-10 h-10 scale-150">
                 {isShow1 ? (
                   <div>
-                    <ExpandCircleDownIcon onClick={showDiv1} />
+                    <ExpandCircleDownIcon />
                   </div>
                 ) : (
                   <div onClick={changeColor2} className="rotate-180">
-                    <ExpandCircleDownIcon onClick={showDiv1} />
+                    <ExpandCircleDownIcon />
                   </div>
                 )}
               </div>

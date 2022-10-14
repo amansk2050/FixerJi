@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import ExpandCircleDownIcon from "@mui/icons-material/ExpandCircleDown";
-import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
+import { motion } from "framer-motion";
 
 const Work = () => {
   const [isHover1, setIsHover1] = useState(false);
   const [isHover2, setIsHover2] = useState(false);
-  const [isShow, setIsShow] = useState(false);
-  const [isShow1, setIsShow1] = useState(false);
+  const [isShow, setIsShow] = useState(true);
+  const [isShow1, setIsShow1] = useState(true);
 
   const changeColor1 = () => {
     setIsHover1(true);
   };
   const changeColorToWhite1 = () => {
-    setIsHover1(false);
+    setIsHover1(!isHover1);
   };
   const changeColor2 = () => {
     setIsHover2(true);
@@ -30,21 +30,30 @@ const Work = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center pt-10 items-center">
+    <div
+      className="flex flex-col justify-center md:pt-[150px] sm:pt-[120px] items-center"
+      id="work"
+    >
       <div className="text-[#8CE605] mb-8 font-poppins font-bold sm:text-2xl md:text-4xl uppercase tracking-wider">
         What We Do
       </div>
       <div className="flex flex-col justify-center items-center">
-        <div
+        <motion.div
+          initial={{ x: -200, opacity: 0 }}
+          transition={{ duration: 0.5 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
           onMouseEnter={changeColor1}
           onMouseLeave={changeColorToWhite1}
-          className="h-auto bg-black/40 border-2 border-[#8CE605] sm:px-5 md:px-10 md:py-10 sm:py-5 rounded-lg mb-6 hover:bg-[#8CE605]/80 transition duration-700"
+          className="h-auto bg-black/40 text-white border-2 border-[#8CE605] sm:px-5 md:px-10 md:py-10 sm:py-5 rounded-lg mb-6 hover:bg-[#8CE605]/80 transition duration-700"
         >
           <div className="flex md:flex-row sm:flex-col sm:justify-center sm:items-center md:items-start lg:w-[900px] md:w-[600px] sm:w-[300px]">
             <div className="md:w-[600px] sm:w-[100px] sm:pb-2 md:pr-4 ">
-              <img
-                src="http://fixerji.theuptraining.com/wp-content/uploads/2022/06/smart-contracts-1.png"
-                alt="hello"
+              <Image
+                alt="Next.js logo"
+                src="/static/asset1.png"
+                width={600}
+                height={600}
               />
             </div>
             <div className="flex justify-center items-center ">
@@ -144,6 +153,46 @@ const Work = () => {
                       <li className="text-md">
                         25.Block timestamp manipulation.
                       </li>
+                      <br />
+                      <h1 className="text-xl">
+                        Iteration 3 - Intention vs action
+                      </h1>
+                      <li className="text-md">
+                        In this iteration, we read your contracts line by line
+                        and understand each what the contract does, how it does
+                        so that we know the meaning of each and every
+                        instruction, statement, variable and function. After
+                        going through the contract we study the purpose of the
+                        project and check whether both of these are aligned or
+                        not. If we find an architectural level issue or a
+                        suggestion which can make your codebase better, we will
+                        include that suggestion as well in the report.
+                      </li>
+                      <br />
+                      <h1 className="text-xl">
+                        Iteration 4 - Localnet deployment and testing with
+                        automated test scripts
+                      </h1>
+                      <li className="text-md">
+                        Although we understand that the code will do what is
+                        written but still it might perform differently after
+                        deployment, hence we write test scripts to test every
+                        branch and statement.
+                      </li>
+                      <br />
+                      <h1 className="text-xl">
+                        Iteration 5 - Public network deployment and user testing
+                      </h1>
+                      <li className="text-md">
+                        The last and the final step is to deploy the contracts
+                        on the public network (mainnet or testnet) and test each
+                        and every functionality before the final sign off. At
+                        the end, we will give you a detailed report with issues
+                        and possible solutions (we do not and will not release
+                        that report publicly without your consent). You may fix
+                        them and release the code or have another round of
+                        auditing with us.
+                      </li>
                     </div>
                   </div>
                 )}
@@ -154,24 +203,30 @@ const Work = () => {
                     <ExpandCircleDownIcon onClick={showDiv} />
                   </div>
                 ) : (
-                  <div onClick={changeColor1}>
-                    <ArrowCircleUpIcon onClick={showDiv} />
+                  <div onClick={changeColor1} className="rotate-180">
+                    <ExpandCircleDownIcon onClick={showDiv} />
                   </div>
                 )}
               </div>
             </div>
           </div>
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+          initial={{ x: 50, opacity: 0 }}
+          transition={{ duration: 0.75, delay: 0.55 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
           onMouseEnter={changeColor2}
           onMouseLeave={changeColorToWhite2}
           className="border-2  bg-black/40 border-[#8CE605] sm:px-5 md:px-10 md:py-10 sm:py-5 rounded-lg mb-6 hover:bg-[#8CE605]/80 transition duration-700"
         >
-          <div className="flex md:flex-row sm:flex-col sm:justify-center md:justify-self-auto sm:items-center   md:items-center lg:w-[900px] md:w-[600px] sm:w-[300px]">
+          <div className="flex md:flex-row sm:flex-col sm:justify-center md:justify-self-auto sm:items-center   md:items-start lg:w-[900px] md:w-[600px] sm:w-[300px]">
             <div className="md:w-[500px] sm:w-[100px] sm:pb-2  md:pr-4 ">
-              <img
-                src="http://fixerji.theuptraining.com/wp-content/uploads/2022/06/application-1.png"
-                alt="hello"
+              <Image
+                alt="Next.js logo"
+                src="/static/asset2.png"
+                width={600}
+                height={600}
               />
             </div>
             <div className="flex justify-center items-center ">
@@ -219,14 +274,14 @@ const Work = () => {
                     <ExpandCircleDownIcon onClick={showDiv1} />
                   </div>
                 ) : (
-                  <div>
-                    <ArrowCircleUpIcon onClick={showDiv1} />
+                  <div onClick={changeColor2} className="rotate-180">
+                    <ExpandCircleDownIcon onClick={showDiv1} />
                   </div>
                 )}
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

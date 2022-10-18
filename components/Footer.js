@@ -24,7 +24,9 @@ const Footer = () => {
         </div>
         <div className="text-center flex flex-col font-semibold">
           <div className=" hover:text-white">Email:</div>
-          <div className=" hover:text-white">mailfixerji@gmail.com</div>
+          <a href="mailto:mailfixerji@gmail.com" className=" hover:text-white">
+            mailfixerji@gmail.com
+          </a>
         </div>
       </div>
       <div className="h-1 border-b border-gray-600 pb-8"></div>

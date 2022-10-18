@@ -124,8 +124,8 @@ const Contact = () => {
               </div>
             </div>
             <div className="flex items-center ">
-              {/* <div className="sm:mr-2 md:mx-2"> */}
-              <div className="mx-2 md:pl-2">
+              <div className="sm:mr-2 md:mx-2">
+                {/* <div className="mx-2 md:pl-2"> */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"

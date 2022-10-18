@@ -24,7 +24,18 @@ const Navbar = () => {
             height={55}
           />
         </div>
-        <div>fixerji</div>
+        <div>
+          <Link
+            activeClass="active"
+            to="hero"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            Fixerji
+          </Link>
+        </div>
       </div>
 
       <nav>

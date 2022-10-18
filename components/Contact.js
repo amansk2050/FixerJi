@@ -1,7 +1,29 @@
-import React from "react";
-import { inbox } from "@heroicons/react/24/outline";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        // process.env.REACT_APP_SERVICE_ID,
+        // process.env.REACT_APP_TEMPLATE_ID,
+        // form.current,
+        // process.env.REACT_APP_PUBLIC_KEY
+        `${process.env.NEXT_PUBLIC_SERVICE_ID}`,
+        `${process.env.NEXT_PUBLIC_TEMPLATE_ID}`,
+        form.current,
+        `${process.env.NEXT_PUBLIC_PUBLIC_KEY}`
+      )
+      .then(
+        (result) => console.log(result.text),
+        (error) => console.log(error.text)
+      );
+    e.target.reset();
+  };
   return (
     <div id="contact">
       <div className="flex justify-center md:pt-[150px] sm:pt-[120px]  items-center">
@@ -10,7 +32,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="flex w-5/6  justify-center items-center text-[#ffffff]  mx-auto lg:py-6 rounded-lg">
-        <form autocomplete="off" action="#">
+        <form ref={form} onSubmit={sendEmail}>
           <div className="flex md:flex-row sm:flex-col items-center md:justify-between ">
             <div className="flex items-center ">
               <div className="sm:mr-2 md:mx-2">
@@ -35,8 +57,9 @@ const Contact = () => {
                   className="bg-transparent ml-2 outline-0 md:pr-20 sm:pr-10 lg:pr-40 md:pl-4 py-2  sm:mx-6 md:mx-3 sm:my-2  rounded-lg"
                   id="name"
                   type="text"
+                  name="user_name"
                   placeholder="Name"
-                  autocomplete="rutjfkde"
+                  required
                 />
               </div>
             </div>
@@ -61,10 +84,11 @@ const Contact = () => {
                 <label htmlFor="email"></label>
                 <input
                   className="bg-transparent ml-2 outline-0 md:pr-20 sm:pr-10 lg:pr-40 md:pl-4 py-2  sm:mx-6 md:mx-3 sm:my-2  rounded-lg"
-                  id="name"
+                  id="email"
                   type="text"
+                  name="user_email"
                   placeholder="Email Address"
-                  autocomplete="new-password"
+                  required
                 />
               </div>
             </div>
@@ -93,14 +117,15 @@ const Contact = () => {
                   className="bg-transparent ml-2 outline-0 md:pr-20 sm:pr-10 lg:pr-40 md:pl-4 py-2  sm:mx-6 md:mx-3 sm:my-2  rounded-lg"
                   id="phone"
                   type="text"
+                  name="user_phone"
                   placeholder="Phone Number"
-                  autocomplete="new-password"
+                  required
                 />
               </div>
             </div>
             <div className="flex items-center ">
-              <div className="sm:mr-2 md:mx-2">
-                {/* <div className="mx-2 md:pl-2"> */}
+              {/* <div className="sm:mr-2 md:mx-2"> */}
+              <div className="mx-2 md:pl-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -122,8 +147,9 @@ const Contact = () => {
                   className="bg-transparent ml-2 outline-0 md:pr-20 sm:pr-10 lg:pr-40 md:pl-4 py-2  sm:mx-6 md:mx-3 sm:my-2  rounded-lg"
                   id="name"
                   type="text"
+                  name="user_subject"
                   placeholder="Subject"
-                  autocomplete="new-password"
+                  required
                 />
               </div>
             </div>
@@ -151,10 +177,12 @@ const Contact = () => {
                   <label htmlFor="message"></label>
                   <textarea
                     id="message"
+                    name="message"
                     rows="4"
                     className="text-white outline-0 block p-4 text-sm  bg-neutral-900 sm:w-[306px]  md:w-[800px] sm:h-[150px] md:h-[220px] rounded-lg"
                     // className="text-white outline-0 block p-4 text-sm  bg-neutral-900 sm:w-[270px] md:w-[800px] sm:h-[150px] md:h-[220px] rounded-lg"
                     placeholder="Your Message..."
+                    required
                   ></textarea>
                 </div>
               </div>
@@ -162,7 +190,11 @@ const Contact = () => {
             <div className="mt-6">
               <div className="relative group">
                 <div className="absolute -inset-0.5 opacity-75 blur rounded-[8px]  sm:px-10  md:px-12  sm:py-5 sm:mb-5 md:py-5 bg-[#f3de2c]  group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt "></div>
-                <button className="relative sm:w-60 md:w-72 mb-5 text-black border border-white bg-[#f3de2c] rounded-lg sm:px-5  md:px-12  sm:py-5 sm:mb-5 md:py-5   uppercase font-oswald transition-all  hover:scale-110 hover:ease-in-out duration-700">
+                <button
+                  type="submit"
+                  value="send"
+                  className="relative sm:w-60 md:w-72 mb-5 text-black border border-white bg-[#f3de2c] rounded-lg sm:px-5  md:px-12  sm:py-5 sm:mb-5 md:py-5   uppercase font-oswald transition-all  hover:scale-110 hover:ease-in-out duration-700"
+                >
                   SEND MESSAGE
                 </button>
               </div>

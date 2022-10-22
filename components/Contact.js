@@ -157,7 +157,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center justify-around mt-3  sm:w-60 md:w-full">
+          <div className="flex flex-col items-center justify-around mt-3  sm:w-full md:w-full">
             {/* here it is */}
             <div className="flex items-start w-full">
               <label className="sm:mr-[2px] md:mx-2 pt-3" htmlFor="message">
@@ -182,7 +182,7 @@ const Contact = () => {
                     id="message"
                     name="message"
                     rows="4"
-                    className="text-white outline-0 block p-4 text-sm  bg-neutral-900 md:w-full sm:w-[288px]  sm:h-[150px] md:h-[220px] rounded-lg"
+                    className="text-white outline-0 block p-4 text-sm  bg-neutral-900 md:w-full sm:w-[284px]  sm:h-[150px] md:h-[220px] rounded-lg"
                     // className="text-white outline-0 block p-4 text-sm  bg-neutral-900 sm:w-[270px] md:w-[800px] sm:h-[150px] md:h-[220px] rounded-lg"
                     placeholder="Your Message..."
                     required
@@ -197,7 +197,7 @@ const Contact = () => {
                   onClick={buttonPressed}
                   type="submit"
                   value="send"
-                  className="relative sm:w-60 md:w-72 mb-5 text-black border border-white bg-[#f3de2c] rounded-lg sm:px-5  md:px-12  sm:py-5 sm:mb-5 md:py-5   uppercase font-oswald transition-all  hover:scale-110 hover:ease-in-out duration-700"
+                  className=" relative sm:w-60 md:w-72 mb-5 text-black border border-white bg-[#f3de2c] rounded-lg sm:px-5  md:px-12  sm:py-5 sm:mb-5 md:py-5   uppercase font-oswald transition-all  hover:scale-110 hover:ease-in-out duration-700"
                 >
                   {isButtonPressed ? `${(<Tick />)}` : "SEND MESSAGE"}
                 </button>

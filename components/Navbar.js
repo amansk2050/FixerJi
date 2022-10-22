@@ -7,7 +7,48 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
-  // const [isHover, setIsHover] = useState(true);
+  const [linkIsActive1, setLinkIsActive1] = useState(false);
+  const [linkIsActive2, setLinkIsActive2] = useState(false);
+  const [linkIsActive3, setLinkIsActive3] = useState(false);
+  const [linkIsActive4, setLinkIsActive4] = useState(false);
+  const [linkIsActive5, setLinkIsActive5] = useState(false);
+
+  const onUnderline1 = () => {
+    setLinkIsActive1(true);
+    setLinkIsActive2(false);
+    setLinkIsActive3(false);
+    setLinkIsActive4(false);
+    setLinkIsActive5(false);
+  };
+
+  const onUnderline2 = () => {
+    setLinkIsActive1(false);
+    setLinkIsActive2(true);
+    setLinkIsActive3(false);
+    setLinkIsActive4(false);
+    setLinkIsActive5(false);
+  };
+  const onUnderline3 = () => {
+    setLinkIsActive1(false);
+    setLinkIsActive2(false);
+    setLinkIsActive3(true);
+    setLinkIsActive4(false);
+    setLinkIsActive5(false);
+  };
+  const onUnderline4 = () => {
+    setLinkIsActive1(false);
+    setLinkIsActive2(false);
+    setLinkIsActive3(false);
+    setLinkIsActive4(true);
+    setLinkIsActive5(false);
+  };
+  const onUnderline5 = () => {
+    setLinkIsActive1(false);
+    setLinkIsActive2(false);
+    setLinkIsActive3(false);
+    setLinkIsActive4(false);
+    setLinkIsActive5(true);
+  };
 
   const showMenu = () => {
     setActive(!active);
@@ -15,7 +56,7 @@ const Navbar = () => {
 
   return (
     <div className="sm:fixed h-16 z-50 bg-black w-full text-white flex justify-around p-4 items-center">
-      <div className="flex justify-center text-[#008037]  tracking-wider items-center uppercase text-2xl font-bold text-center md:relative sm:absolute sm:top-0.5 sm:left-2">
+      <div className=" cursor-pointer flex justify-center text-[#8CE605]  tracking-wider items-center uppercase text-2xl font-bold text-center md:relative sm:absolute sm:top-0.5 sm:left-2">
         <div>
           <Image
             alt="Next.js logo"
@@ -38,13 +79,17 @@ const Navbar = () => {
         </div>
       </div>
 
-      <nav>
+      <nav className="cursor-pointer">
         <div className="sm:absolute right-8 md:hidden top-5 scale-100">
           <MenuIcon onClick={showMenu} className=" cursor-pointer" />
         </div>
         <ul className="hidden md:flex gap-8 p-6 uppercase">
-          <li className="border-b-2 border-black hover:border-b-[#ffffff]">
+          <li>
             <Link
+              onClick={onUnderline1}
+              className={`text-slate-300 hover:text-white ${
+                linkIsActive1 ? "underline" : ""
+              }`}
               activeClass="active"
               to="hero"
               spy={true}
@@ -55,8 +100,12 @@ const Navbar = () => {
               Home
             </Link>
           </li>
-          <li className="border-b-2 border-black hover:border-b-[#ffffff]">
+          <li>
             <Link
+              onClick={onUnderline2}
+              className={`text-slate-300 hover:text-white ${
+                linkIsActive2 ? "underline" : ""
+              }`}
               activeClass="active"
               to="work"
               spy={true}
@@ -67,8 +116,12 @@ const Navbar = () => {
               What we do
             </Link>
           </li>
-          <li className="border-b-2 border-black hover:border-b-[#ffffff]">
+          <li className="text-slate-300 hover:text-white">
             <Link
+              onClick={onUnderline3}
+              className={`text-slate-300 hover:text-white ${
+                linkIsActive3 ? "underline" : ""
+              }`}
               activeClass="active"
               to="client"
               spy={true}
@@ -79,8 +132,12 @@ const Navbar = () => {
               Clientele
             </Link>
           </li>
-          <li className="border-b-2 border-black hover:border-b-[#ffffff]">
+          <li className="text-slate-300 hover:text-white">
             <Link
+              onClick={onUnderline4}
+              className={`text-slate-300 hover:text-white ${
+                linkIsActive4 ? "underline" : ""
+              }`}
               activeClass="active"
               to="about"
               spy={true}
@@ -91,8 +148,12 @@ const Navbar = () => {
               About
             </Link>
           </li>
-          <li className="border-b-2 border-black hover:border-b-[#ffffff] z-50">
+          <li className="text-slate-300 hover:text-white z-50">
             <Link
+              onClick={onUnderline5}
+              className={`text-slate-300 hover:text-white ${
+                linkIsActive5 ? "underline" : ""
+              }`}
               activeClass="active"
               to="contact"
               spy={true}

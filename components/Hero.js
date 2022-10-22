@@ -34,7 +34,7 @@ const Hero = () => {
             to="work"
             spy={true}
             smooth={true}
-            offset={180}
+            offset={140}
             duration={500}
           >
             <button className="relative text-black border-2 border-[#8CE605] bg-[#8CE605]  rounded-[8px] sm:px-10  md:px-12  sm:py-5 sm:mb-5 md:py-5   uppercase font-oswald transition-all  hover:scale-110 hover:ease-in-out duration-700">

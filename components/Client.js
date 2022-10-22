@@ -99,14 +99,14 @@ const Client = () => {
           <div className="sm:px-20">
             <div
               className={`text-[#8CE605]  font-Noto font-bold text-sm text-center ${
-                isHover3 ? "text-white" : "text-[#8CE605]"
+                isHover2 ? "text-white" : "text-[#8CE605]"
               }`}
             >
               AMANDA LEE
             </div>
             <div
               className={`font-Noto font-bold text-xl text-center ${
-                isHover3 ? "text-white" : "text-[#8CE605]"
+                isHover2 ? "text-white" : "text-[#8CE605]"
               }`}
             >
               CEO <span className="italic">@PeckShield</span>

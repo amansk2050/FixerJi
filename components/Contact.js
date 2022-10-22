@@ -33,12 +33,12 @@ const Contact = () => {
           Contact
         </div>
       </div>
-      <div className="flex w-5/6  justify-center items-center text-[#ffffff]  mx-auto lg:py-6 rounded-lg">
+      <div className="flex justify-center items-center text-[#ffffff] lg:py-6 rounded-lg">
         <form ref={form} onSubmit={sendEmail}>
           <div className="flex md:flex-row sm:flex-col items-center md:justify-between sm:w-80 md:w-full ">
             {/* here */}
             <div className="flex items-center w-full ">
-              <label className="sm:mr-2 md:mx-2" htmlFor="name">
+              <label className="sm:mr-[2px] md:mx-2" htmlFor="name">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -69,7 +69,7 @@ const Contact = () => {
             </div>
             {/* uptill here */}
             <div className="flex items-center w-full">
-              <label className="sm:mr-2 md:mx-2" htmlFor="email">
+              <label className="sm:mr-[2px] md:mx-2" htmlFor="email">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -100,7 +100,7 @@ const Contact = () => {
           </div>
           <div className="flex md:flex-row  sm:flex-col items-center justify-between mt-3 sm:w-80 md:w-full">
             <div className="flex items-center w-full">
-              <label className="sm:mr-2 md:mx-2" htmlFor="phone">
+              <label className="sm:mr-[2px] md:mx-2" htmlFor="phone">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -129,7 +129,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="flex items-center w-full ">
-              <label className="sm:mr-2 md:mx-2" htmlFor="subject">
+              <label className="sm:mr-[2px] md:mx-2" htmlFor="subject">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -159,7 +159,7 @@ const Contact = () => {
           </div>
           <div className="flex flex-col items-center justify-around mt-3 w-full">
             <div className="flex items-start w-full">
-              <label className="sm:mr-2 md:mx-2 pt-3" htmlFor="message">
+              <label className="sm:mr-[2px] md:mx-2 pt-3" htmlFor="message">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"

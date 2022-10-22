@@ -35,7 +35,7 @@ const Contact = () => {
       </div>
       <div className="flex justify-center items-center text-[#ffffff] lg:py-6 rounded-lg">
         <form ref={form} onSubmit={sendEmail}>
-          <div className="flex md:flex-row sm:flex-col items-center md:justify-between sm:w-80 md:w-full ">
+          <div className="flex md:flex-row sm:flex-col items-center md:justify-between  md:w-full ">
             {/* here */}
             <div className="flex items-center w-full ">
               <label className="sm:mr-[2px] md:mx-2" htmlFor="name">
@@ -98,7 +98,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="flex md:flex-row  sm:flex-col items-center justify-between mt-3 sm:w-80 md:w-full">
+          <div className="flex md:flex-row  sm:flex-col items-center md:justify-between mt-3  md:w-full">
             <div className="flex items-center w-full">
               <label className="sm:mr-[2px] md:mx-2" htmlFor="phone">
                 <svg
@@ -119,7 +119,7 @@ const Contact = () => {
 
               <div className=" bg-neutral-900 sm:mb-3 md:mb-0 rounded-lg w-full">
                 <input
-                  className="bg-transparent ml-2 outline-0 md:w-96 sm:w-72  py-2  sm:mx-6 md:mx-3 sm:my-2  rounded-lg"
+                  className="bg-transparent ml-2 outline-0 md:w-96 sm:w-72  md:pl-4 py-2  sm:mx-6 md:mx-3 sm:my-2  rounded-lg"
                   id="phone"
                   type="number"
                   name="user_phone"

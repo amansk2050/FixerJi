@@ -181,7 +181,7 @@ const Contact = () => {
                     id="message"
                     name="message"
                     rows="4"
-                    className="text-white outline-0 block p-4 text-sm  bg-neutral-900 md:w-full sm:w-[319px]  sm:h-[150px] md:h-[220px] rounded-lg"
+                    className="text-white outline-0 block p-4 text-sm  bg-neutral-900 md:w-full sm:w-[318px]  sm:h-[150px] md:h-[220px] rounded-lg"
                     // className="text-white outline-0 block p-4 text-sm  bg-neutral-900 sm:w-[270px] md:w-[800px] sm:h-[150px] md:h-[220px] rounded-lg"
                     placeholder="Your Message..."
                     required

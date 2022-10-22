@@ -33,9 +33,9 @@ const Contact = () => {
           Contact
         </div>
       </div>
-      <div className="flex justify-center items-center text-[#ffffff] lg:py-6 rounded-lg">
+      <div className="flex justify-center items-center text-[#ffffff] lg:py-6 rounded-lg ">
         <form ref={form} onSubmit={sendEmail}>
-          <div className="flex md:flex-row sm:flex-col items-center md:justify-between mx-auto sm:w-80 md:w-full ">
+          <div className="flex md:flex-row sm:flex-col items-center md:justify-between   md:w-full ">
             {/* here */}
             <div className="flex items-center w-full ">
               <label className="sm:mr-[2px] md:mx-2" htmlFor="name">
@@ -57,7 +57,7 @@ const Contact = () => {
 
               <div className=" bg-neutral-900 sm:mb-3 md:mb-0 rounded-lg w-full">
                 <input
-                  className="bg-transparent ml-2 outline-0 md:w-96 sm:w-72
+                  className="bg-transparent ml-2 outline-0 md:w-96 sm:w-60
                     md:pl-4 py-2  sm:mx-6 md:mx-3 sm:my-2  rounded-lg"
                   id="name"
                   type="text"
@@ -88,7 +88,7 @@ const Contact = () => {
 
               <div className=" bg-neutral-900  rounded-lg w-full">
                 <input
-                  className="bg-transparent ml-2 outline-0 md:w-96 sm:w-72 md:pl-4 py-2  sm:mx-6 md:mx-3 sm:my-2  rounded-lg"
+                  className="bg-transparent ml-2 outline-0 md:w-96 sm:w-60 md:pl-4 py-2  sm:mx-6 md:mx-3 sm:my-2  rounded-lg"
                   id="email"
                   type="email"
                   name="user_email"
@@ -98,7 +98,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="flex md:flex-row  sm:flex-col items-center md:justify-between mt-3 mx-auto sm:w-80   md:w-full">
+          <div className="flex md:flex-row  sm:flex-col items-center md:justify-between mt-3  sm:w-72   md:w-full">
             <div className="flex items-center w-full">
               <label className="sm:mr-[2px] md:mx-2" htmlFor="phone">
                 <svg
@@ -119,7 +119,7 @@ const Contact = () => {
 
               <div className=" bg-neutral-900 sm:mb-3 md:mb-0 rounded-lg w-full">
                 <input
-                  className="bg-transparent ml-2 outline-0 md:w-96 sm:w-72  md:pl-4 py-2  sm:mx-6 md:mx-3 sm:my-2  rounded-lg"
+                  className="bg-transparent ml-2 outline-0 md:w-96 sm:w-60  md:pl-4 py-2  sm:mx-6 md:mx-3 sm:my-2  rounded-lg"
                   id="phone"
                   type="number"
                   name="user_phone"
@@ -147,7 +147,7 @@ const Contact = () => {
               </label>
               <div className=" bg-neutral-900 sm:mb-3 md:mb-0 rounded-lg w-full">
                 <input
-                  className="bg-transparent ml-2 outline-0 md:w-96 sm:w-72 md:pl-4 py-2  sm:mx-6 md:mx-3 sm:my-2  rounded-lg"
+                  className="bg-transparent ml-2 outline-0 md:w-96 sm:w-60 md:pl-4 py-2  sm:mx-6 md:mx-3 sm:my-2  rounded-lg"
                   id="subject"
                   type="text"
                   name="user_subject"
@@ -157,7 +157,8 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center justify-around mt-3 w-full">
+          <div className="flex flex-col items-center justify-around mt-3  sm:w-60 md:w-full">
+            {/* here it is */}
             <div className="flex items-start w-full">
               <label className="sm:mr-[2px] md:mx-2 pt-3" htmlFor="message">
                 <svg
@@ -181,7 +182,7 @@ const Contact = () => {
                     id="message"
                     name="message"
                     rows="4"
-                    className="text-white outline-0 block p-4 text-sm  bg-neutral-900 md:w-full sm:w-[318px]  sm:h-[150px] md:h-[220px] rounded-lg"
+                    className="text-white outline-0 block p-4 text-sm  bg-neutral-900 md:w-full sm:w-[288px]  sm:h-[150px] md:h-[220px] rounded-lg"
                     // className="text-white outline-0 block p-4 text-sm  bg-neutral-900 sm:w-[270px] md:w-[800px] sm:h-[150px] md:h-[220px] rounded-lg"
                     placeholder="Your Message..."
                     required

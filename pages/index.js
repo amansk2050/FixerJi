@@ -27,9 +27,9 @@ export default function Home() {
           <section className="min-h-screen  w-full">
             <Work />
           </section>
-          <section className="min-h-screen w-full">
+          {/* <section className="min-h-screen w-full">
             <Client />
-          </section>
+          </section> */}
           <section className="min-h-screen w-full">
             <About />
           </section>

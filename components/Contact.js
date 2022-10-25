@@ -29,13 +29,13 @@ const Contact = () => {
   return (
     <div id="contact">
       <div className="flex justify-center md:pt-[150px] sm:pt-[120px]  items-center">
-        <div className="text-[#8CE605] mb-8 font-poppins font-bold sm:text-2xl md:text-4xl uppercase  tracking-wider">
+        <div className="text-[#8CE605] mb-8 font-poppins font-bold sm:text-2xl md:text-4xl uppercase tracking-wider">
           Contact
         </div>
       </div>
       <div className="flex justify-center items-center text-[#ffffff] lg:py-6 rounded-lg ">
         <form ref={form} onSubmit={sendEmail}>
-          <div className="flex md:flex-row sm:flex-col items-center md:justify-between   md:w-full ">
+          <div className="flex md:flex-row sm:flex-col items-center md:justify-between md:w-full ">
             {/* here */}
             <div className="flex items-center w-full ">
               <label className="sm:mr-[2px] md:mx-2" htmlFor="name">
@@ -192,14 +192,14 @@ const Contact = () => {
             </div>
             <div className="mt-6">
               <div className="relative group">
-                <div className="absolute -inset-0.5 opacity-75 blur rounded-[8px]  sm:px-10  md:px-12  sm:py-5 sm:mb-5 md:py-5 bg-[#f3de2c]  group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt "></div>
+                <div className="absolute -inset-0.5 opacity-75 blur rounded-[8px] h-16  sm:px-10  md:px-12  sm:py-5 sm:mb-5 md:py-5 bg-[#f3de2c]  group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt "></div>
                 <button
                   onClick={buttonPressed}
                   type="submit"
                   value="send"
-                  className=" relative sm:w-60 md:w-72 mb-5 text-black border border-white bg-[#f3de2c] rounded-lg sm:px-5  md:px-12  sm:py-5 sm:mb-5 md:py-5   uppercase font-oswald transition-all  hover:scale-110 hover:ease-in-out duration-700"
+                  className="h-16 relative sm:w-60 md:w-72 mb-5 text-black border border-white bg-[#f3de2c] rounded-lg sm:px-5  md:px-12  sm:py-5 sm:mb-5 md:py-5   uppercase font-oswald transition-all  hover:scale-110 hover:ease-in-out duration-700"
                 >
-                  {isButtonPressed ? `${(<Tick />)}` : "SEND MESSAGE"}
+                  {isButtonPressed ? "MESSAGE SENT" : "SEND MESSAGE"}
                 </button>
               </div>
             </div>

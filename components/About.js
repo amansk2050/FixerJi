@@ -15,7 +15,7 @@ const About = () => {
     <div id="about">
       <div className="flex justify-center md:pt-[150px] sm:pt-[100px] pt-10 items-center">
         <div className="text-[#8CE605] mb-8 font-poppins font-bold sm:text-2xl md:text-4xl uppercase  tracking-wider">
-          About
+          About Us
         </div>
       </div>
       <motion.div
@@ -44,9 +44,12 @@ const About = () => {
                 isHover1 ? "text-black" : "text-white"
               }`}
             >
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
+              I just hate when my transaction does not go through even when the
+              internet is working, I hate limitations and control. That’s how I
+              got into Web 3.0 where there is no central authority and no one
+              can stop you whether you are sending $1 or $10 million or at 3PM
+              or 3AM. But this isn’t just about money this is about Freedom from
+              Censorship.
             </div>
 
             <div
@@ -54,14 +57,14 @@ const About = () => {
                 isHover1 ? "text-black" : "text-[#8CE605]"
               }`}
             >
-              Designer
+              Smart Contracts Auditor
             </div>
             <div
               className={`text-[#8CE605] font-Noto font-bold text-xl ${
                 isHover1 ? "text-black" : "text-[#8CE605]"
               }`}
             >
-              David Milan
+              Alice
             </div>
           </div>
         </div>
@@ -80,27 +83,28 @@ const About = () => {
               />
             </div>
             <div
-              className={`text-[#ffffff] md:mb-8 font-poppins font-bold text-sm ${
+              className={`text-[#ffffff] md:mb-20 font-poppins font-bold text-sm ${
                 isHover2 ? "text-black" : "text-white"
               }`}
             >
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
+              I was fascinated by Web 3.0 because of crypto prices in 2021, I
+              would have even sold my house to invest in crypto if I had one.
+              However I didn’t so I loaned the money and went all in and since
+              then I don’t ever see myself going back.
             </div>
             <div
               className={`text-[#8CE605] mt-8 font-Noto font-bold text-xl ${
                 isHover2 ? "text-black" : "text-[#8CE605]"
               }`}
             >
-              Designer
+              Smart Contracts Auditor
             </div>
             <div
               className={`text-[#8CE605] font-Noto font-bold text-xl ${
                 isHover2 ? "text-black" : "text-[#8CE605]"
               }`}
             >
-              David Milan
+              Bob
             </div>
           </div>
         </div>

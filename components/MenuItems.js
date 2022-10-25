@@ -37,7 +37,7 @@ const MenuItems = ({ showMenu, active }) => {
             What we do
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link
             activeClass="active"
             to="client"
@@ -48,7 +48,7 @@ const MenuItems = ({ showMenu, active }) => {
           >
             Clientele
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link
             activeClass="active"
@@ -58,7 +58,7 @@ const MenuItems = ({ showMenu, active }) => {
             offset={0}
             duration={500}
           >
-            About
+            About Us
           </Link>
         </li>
         <li>

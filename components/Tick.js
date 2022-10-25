@@ -1,29 +1,22 @@
 import React from "react";
-
+import Lottie from "react-lottie";
+import animationData from "../public/static/tick_animation.json";
 
 const Tick = () => {
+  const defaultOptions = {
+    loop: 1,
+    autoplay: false,
+    // here is where we will declare lottie animation
+    // "animation" is what we imported before animationData: animation,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   return (
-    <div className="wrapper">
-      {" "}
-      <svg
-        class="checkmark"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 52 52"
-      >
-        {" "}
-        <circle
-          className="checkmark__circle"
-          cx="26"
-          cy="26"
-          r="25"
-          fill="none"
-        />{" "}
-        <path
-          className="checkmark__check"
-          fill="none"
-          d="M14.1 27.2l7.1 7.2 16.7-16.8"
-        />
-      </svg>
+    <div>
+      <Lottie options={defaultOptions} height={25} width={50} />
     </div>
   );
 };

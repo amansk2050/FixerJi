@@ -116,7 +116,7 @@ const Navbar = () => {
               What we do
             </Link>
           </li>
-          <li className="text-slate-300 hover:text-white">
+          {/* <li className="text-slate-300 hover:text-white">
             <Link
               onClick={onUnderline3}
               className={`text-slate-300 hover:text-white ${
@@ -131,7 +131,7 @@ const Navbar = () => {
             >
               Clientele
             </Link>
-          </li>
+          </li> */}
           <li className="text-slate-300 hover:text-white">
             <Link
               onClick={onUnderline4}
@@ -145,7 +145,7 @@ const Navbar = () => {
               offset={50}
               duration={500}
             >
-              About
+              About Us
             </Link>
           </li>
           <li className="text-slate-300 hover:text-white z-50">

@@ -61,36 +61,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-// import React from "react";
-// import { useTypewriter, Cursor } from "react-simple-typewriter";
-
-// const Hero = () => {
-//   const [text] = useTypewriter({
-//     words: ["Fix It Before"],
-//   });
-//   const [text1] = useTypewriter({
-//     words: ["It's Too Late"],
-//   });
-//   return (
-//     <div className="h-full">
-//       <div className="relative flex justify-center items-center h-20">
-//         <h1 className="absolute sm:top-[150px]  md:top-[200px] font-bold uppercase font-oswald md:text-5xl lg:text-6xl text-[#8CE605] tracking-widest z-0">
-//           <div className="motion-safe:animate-pulse transition-all duration-200">
-//             {text}
-//           </div>
-//           <Cursor />
-//         </h1>
-//         <br />
-//         <h2>
-//           <div className="motion-safe:animate-pulse transition-all duration-1000">
-//             {text1}
-//           </div>
-//           <Cursor />
-//         </h2>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Hero;

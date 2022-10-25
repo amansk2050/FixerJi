@@ -71,7 +71,7 @@ const About = () => {
         <div
           onMouseEnter={changeColor2}
           onMouseLeave={changeColor2}
-          className={`md:w-96 border-2 border-[#8CE605] sm:px-4 md:px-10 py-10 sm:mb-4 rounded-lg ${
+          className={`md:w-96 border-2 border-[#8CE605] sm:px-4 md:px-10 py-9 sm:mb-4 rounded-lg ${
             isHover2 ? "bg-[#8ce605]/90" : ""
           }`}
         >

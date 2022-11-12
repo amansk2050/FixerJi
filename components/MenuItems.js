@@ -8,7 +8,7 @@ const MenuItems = ({ showMenu, active }) => {
       className={
         active
           ? " text-black flex flex-col items-end fixed  right-0 top-[-10px] backdrop-blur-sm bg-[#ffffff]/20 justify-start p-8 md:hidden gap-4 z-10 h-screen w-full transition-all duration-1000"
-          : " flex flex-col opacity-0 translate-x-96 transition-all duration-700 absolute top-[10px] h-80 w-56 p-8 items-end gap-4 z-10  "
+          : " flex flex-col opacity-0 translate-x-96 transition-all duration-700 absolute top-[10px] h-80 w-56 p-8 items-end gap-4 z-0  "
       }
     >
       <div className="translate-x-0 flex flex-col items-end fixed right-[-10px] top-[-2px] justify-start pt-8 pb-24 pl-28 pr-10 md:hidden gap-4 font-semibold  z-30  bg-[#8CE605]  transition-all duration-200 ">
@@ -37,7 +37,7 @@ const MenuItems = ({ showMenu, active }) => {
             What we do
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link
             activeClass="active"
             to="client"
@@ -48,7 +48,7 @@ const MenuItems = ({ showMenu, active }) => {
           >
             Clientele
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link
             activeClass="active"
@@ -58,7 +58,7 @@ const MenuItems = ({ showMenu, active }) => {
             offset={0}
             duration={500}
           >
-            About
+            About Us
           </Link>
         </li>
         <li>

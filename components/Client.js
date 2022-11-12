@@ -25,6 +25,22 @@ const Client = () => {
     setIsHover3(false);
   };
 
+  // useEffect(() => {}, []);
+  // let boxVariants = {};
+  // // const isMobile = window.innerWidth < 768;
+
+  // if (typeof window !== "undefined" && window.innerWidth < 768) {
+  //   boxVariants = {
+  //     transition: {
+  //       duration: 0.75,
+  //     },
+  //     opacity: {
+  //       initial: 0,
+  //       whileInView: 1,
+  //     },
+  //   };
+  // }
+
   return (
     <div id="client">
       <div className="flex justify-center md:pt-[150px] sm:pt-[120px] pt-10 items-center">
@@ -35,14 +51,10 @@ const Client = () => {
 
       {/* rest */}
       <div className="flex sm:w-auto md:w-full sm:overflow-x-auto md:overflow-hidden  md:justify-around items-center">
-        <motion.div
-          initial={{ opacity: 0 }}
-          transition={{ duration: 0.75 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
+        <div
           onMouseEnter={changeColor1}
           onMouseLeave={changeColorToWhite1}
-          className=" sm:mr-5 md:w-[300px] sm:w-[600px] lg:w-[350px] md:h-[420px] lg:h-[500px] border border-black rounded-md bg-neutral-900 hover:bg-[#8CE605]/80 transition-all duration-1000 flex flex-col justify-center items-center md:p-12  sm:py-8 "
+          className=" sm:mr-3 md:w-[300px] sm:w-[600px] lg:w-[350px] md:h-[420px] lg:h-[500px] border border-black rounded-md bg-neutral-900 hover:bg-[#8CE605]/80 transition-all duration-1000 flex flex-col justify-center items-center md:p-12  sm:py-8 "
         >
           <div className="w-[50px] h-[50px] border border-[#ffffff] rounded-full mb-2">
             <img
@@ -71,14 +83,14 @@ const Client = () => {
             the readable content of a page when looking at its layout. The point
             of using Lorem Ipsum is that it has a more-or-less normal
           </div>
-        </motion.div>
+        </div>
         {/* 2nd Card */}
         <div
           onMouseEnter={changeColor2}
           onMouseLeave={changeColorToWhite2}
-          className=" snap-center sm:mr-5 md:w-[300px] lg:w-[450px] sm:w-[600px]  md:h-[420px]  lg:h-[600px] border border-black rounded-md bg-neutral-900 hover:bg-[#8CE605]/80 transition-colors duration-1000 flex flex-col justify-center items-center md:px-12 sm:py-8"
+          className=" sm:mr-3 md:w-[300px] sm:w-[600px] lg:w-[350px] md:h-[420px] lg:h-[500px] border border-black rounded-md  bg-neutral-900 hover:bg-[#8CE605]/80 transition-all duration-1000 flex flex-col justify-center items-center md:p-12  sm:py-8 "
         >
-          <div className=" w-[50px] h-[50px] border border-[#ffffff] rounded-full mb-2 ">
+          <div className="w-[50px] h-[50px] border border-[#ffffff] rounded-full mb-2">
             <img
               src="https://avatars.dicebear.com/api/adventurer/your-custom-seed.svg"
               alt="name"
@@ -100,18 +112,14 @@ const Client = () => {
               CEO <span className="italic">@PeckShield</span>
             </div>
           </div>
-          <div className="text-[#ffffff] md:mb-8 font-poppins font-bold text-sm md:text-center mt-8 px-6">
+          <div className="text-[#ffffff] md:mb-8 font-poppins font-bold text-sm md:text-center mt-8 px-6 lg:w-[280px]">
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout. The point
             of using Lorem Ipsum is that it has a more-or-less normal
           </div>
         </div>
         {/* 2nd Card */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          transition={{ duration: 0.75 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
+        <div
           onMouseEnter={changeColor3}
           onMouseLeave={changeColorToWhite3}
           className=" sm:mr-5 md:w-[300px] sm:w-[600px] lg:w-[350px] md:h-[420px] lg:h-[500px] border border-black rounded-md  bg-neutral-900 hover:bg-[#8CE605]/80 transition-all duration-1000 flex flex-col justify-center items-center md:p-12  sm:py-8 "
@@ -143,7 +151,7 @@ const Client = () => {
             the readable content of a page when looking at its layout. The point
             of using Lorem Ipsum is that it has a more-or-less normal
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );
